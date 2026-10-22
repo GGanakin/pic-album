@@ -1,0 +1,11 @@
+services:
+  pic-album:
+    build: .
+    image: pic-album:latest
+    container_name: pic-album
+    ports:
+      - "5173:5173"
+    volumes:
+      # PIC_DIR should point at the original-resolution photo folder on the host
+      - ${PIC_DIR:-./all_pic}:/app/all_pic:ro
+    restart: unless-stopped

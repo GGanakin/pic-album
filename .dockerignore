@@ -1,0 +1,10 @@
+all_pic/
+output/
+dist/
+post/
+post_ref/
+node_modules/
+.git/
+deploy/
+*.zip
+*.md

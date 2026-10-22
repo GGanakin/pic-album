@@ -1,0 +1,14 @@
+{
+  "name": "our-little-forever",
+  "version": "1.0.0",
+  "private": true,
+  "description": "予你余生 · 小满与阿澈的婚纱照相册",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node --check photos.js && node --check assets/music-player.js && node --check scripts/serve.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

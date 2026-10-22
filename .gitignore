@@ -1,0 +1,12 @@
+# Large media and build artifacts are not tracked; mount them at runtime
+all_pic/
+output/
+dist/
+post/
+post_ref/
+总精修.zip
+
+node_modules/
+__pycache__/
+.DS_Store
+.git/

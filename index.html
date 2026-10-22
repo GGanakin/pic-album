@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f7f2">
+  <meta name="description" content="小满与阿澈的婚纱相册。把心动藏进镜头，把喜欢写成永远。">
+  <title>予你余生 · 小满 & 阿澈的婚纱相册</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" as="image" href="assets/photos/GK6A5753-thumb.webp">
+  <link rel="preload" as="image" href="assets/photos/GK6A6184-thumb.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="photos.js" defer></script>
+  <script src="assets/music-player.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#memories">跳到照片相册</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 5.5a5.5 5.5 0 0 0-7.8 0l-.6.6-.6-.6a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-7.7a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+      <symbol id="i-flower" viewBox="0 0 32 32"><path d="M16 10C8-4 2 11 11 14-4 13 4 28 13 20c-3 15 13 13 7 0 12 9 17-7 3-7 11-8-3-16-7-3Z"/><circle cx="16" cy="16" r="3.6"/></symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C9 2 3 6 4 13c1 7 12 8 15 0 1-3 1-6 1-10ZM3 21 15 9M8 15l-1-5M12 11l5 1"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6L12 3ZM21 2v4M19 4h4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+      <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 6h3c4 0 8 12 12 12h3M17 14l4 4-4 4M3 18h3c1.8 0 3.5-2.1 5-5M14 8c1.4-1.5 2.5-2 4-2h3M17 2l4 4-4 4"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+      <symbol id="i-next-track" viewBox="0 0 24 24"><path d="m4 5 10 7-10 7V5ZM19 5v14"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+      <symbol id="i-masonry" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="11" rx="1"/><rect x="14" y="3" width="7" height="6" rx="1"/><rect x="3" y="18" width="7" height="3" rx=".6"/><rect x="14" y="13" width="7" height="8" rx="1"/></symbol>
+      <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M7.5 10.5h6M10.5 7.5v6"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 15v5h16v-5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+      <symbol id="i-envelope" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand" aria-label="予你余生，回到首页">
+        <svg class="brand-flower icon"><use href="#i-flower"/></svg>
+        <span class="brand-name">予你<span class="brand-dot">·</span>余生<small>OUR LITTLE FOREVER</small></span>
+      </a>
+      <nav class="main-nav" aria-label="主要导航">
+        <a href="#memories" class="nav-link is-active" data-nav="album" aria-current="page">我们的相册</a>
+        <button class="nav-link" data-nav="favorites" type="button"><svg class="icon"><use href="#i-heart"/></svg>心动收藏<span id="favorites-count" class="favorite-count" hidden>0</span></button>
+        <a href="#our-story" class="nav-link" data-nav="story">写给彼此</a>
+      </nav>
+      <button class="random-button" id="random-photo" type="button"><svg class="icon"><use href="#i-shuffle"/></svg><span>偶遇一张</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span></span> TWO HEARTS, ONE LITTLE FOREVER</p>
+        <h1 id="hero-heading">刚好是你，<br><span>余生都是你。</span><svg class="title-spark icon" aria-hidden="true"><use href="#i-sparkles"/></svg></h1>
+        <p class="hero-description">把心动藏进镜头，把喜欢写成永远。<br>这里，收藏着我们的每一个「我愿意」。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#memories">翻开我们的故事<svg class="icon"><use href="#i-arrow"/></svg></a>
+          <button class="play-memories" id="play-memories" type="button"><span class="play-circle"><svg class="icon"><use href="#i-play"/></svg></span>播放回忆</button>
+        </div>
+        <div class="couple-signature"><span class="signature-line"></span><span>小满 <em>&</em> 阿澈</span><span class="tiny-heart" aria-hidden="true">♡</span><span class="signature-note">往后的日子，一起慢慢走</span></div>
+      </div>
+
+      <div class="hero-photos">
+        <div class="hero-wash" aria-hidden="true"></div>
+        <svg class="doodle-heart" viewBox="0 0 80 70" fill="none" aria-hidden="true"><path d="M40 60C27 49 4 32 12 17c8-14 24-4 28 7 7-16 24-16 27-2 4 15-14 30-27 38Z"/><path d="m56 4 2-4M71 9l6-2M72 21l7 2"/></svg>
+        <button class="polaroid polaroid-back" data-open-photo="GK6A6184" aria-label="放大查看：余生，请多指教" type="button">
+          <span class="washi-tape" aria-hidden="true"></span>
+          <img src="assets/photos/GK6A6184-thumb.webp" alt="花园暖光里，牵着手的我们" width="3574" height="5361" fetchpriority="high">
+          <span class="polaroid-caption">every day, with you <span>♡</span></span>
+        </button>
+        <button class="polaroid polaroid-front" data-open-photo="GK6A5753" aria-label="放大查看：刚好，牵住了你" type="button">
+          <span class="washi-tape" aria-hidden="true"></span>
+          <img src="assets/photos/GK6A5753-thumb.webp" alt="绿意与微风中，相望而笑的我们" width="3567" height="5351" fetchpriority="high">
+          <span class="polaroid-caption">you are my favorite <svg class="icon"><use href="#i-heart"/></svg></span>
+        </button>
+        <div class="love-stamp" aria-hidden="true"><span>SEALED WITH A</span><svg class="icon"><use href="#i-heart"/></svg><span>little love</span><i>· FOREVER & ALWAYS ·</i></div>
+        <svg class="doodle-sprig" viewBox="0 0 80 105" fill="none" aria-hidden="true"><path d="M43 99c-8-21-4-50 10-77M39 70C12 71 7 53 9 47c21 1 30 9 30 23Zm3-24c-22-7-22-21-18-29 13 4 19 16 18 29Zm7-17C42 14 53 5 65 4c3 13-4 23-16 25Zm-9 33c20 0 30-8 32-23-14-1-28 10-32 23Z"/></svg>
+        <div class="handwritten hero-note" aria-hidden="true">our love, in little moments<svg viewBox="0 0 75 30" fill="none"><path d="M2 10c23 19 44 20 65-2m-13 1 15-4-2 14"/></svg></div>
+        <svg class="photo-spark icon" aria-hidden="true"><use href="#i-sparkles"/></svg>
+      </div>
+    </section>
+
+    <div class="chapter-divider container" aria-hidden="true"><span></span><svg class="icon"><use href="#i-flower"/></svg><p>把平凡的日子，过成浪漫的纪念</p><svg class="icon"><use href="#i-flower"/></svg><span></span></div>
+
+    <section class="memories container" id="memories" aria-labelledby="gallery-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow" id="gallery-eyebrow">THE MOMENTS WE KEEP</p><h2 id="gallery-heading" tabindex="-1">把心动，慢慢收藏<span class="heading-dot">.</span></h2></div>
+        <p class="section-note">每一张，都是喜欢你的证据。<span class="handwritten">All my tomorrows are yours.</span></p>
+      </div>
+      <div class="gallery-toolbar">
+        <div class="filter-list" id="collection-filters" role="group" aria-label="按拍摄场景筛选"></div>
+        <div class="layout-switch" role="group" aria-label="照片排列方式">
+          <button type="button" class="layout-button is-active" data-layout="masonry" aria-label="错落排列" aria-pressed="true" title="错落排列"><svg class="icon"><use href="#i-masonry"/></svg></button>
+          <button type="button" class="layout-button" data-layout="grid" aria-label="整齐排列" aria-pressed="false" title="整齐排列"><svg class="icon"><use href="#i-grid"/></svg></button>
+        </div>
+      </div>
+      <div class="gallery-meta"><p id="gallery-status" role="status"><span class="status-dot"></span>60 个瞬间，一辈子的偏爱</p><span class="gallery-hint"><svg class="icon"><use href="#i-zoom"/></svg>轻点照片，靠近这一刻</span></div>
+      <div class="gallery" id="gallery" data-layout="masonry" aria-label="婚纱照片"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-heart"><svg class="icon"><use href="#i-heart"/></svg></span>
+        <h3>把最心动的瞬间，留在这里</h3>
+        <p>轻点照片旁的小爱心，就能收藏这一刻。</p>
+        <button class="button button-primary" id="explore-album" type="button">去相册逛逛<svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="gallery-bottom" id="gallery-bottom">
+        <p class="page-count" id="page-count"></p>
+        <button class="button button-more" id="load-more" type="button">再翻一页<svg class="icon"><use href="#i-down"/></svg></button>
+        <p class="album-end" id="album-end" hidden><svg class="icon"><use href="#i-heart"/></svg>照片会翻完，喜欢不会。</p>
+      </div>
+    </section>
+
+    <section class="story-section container" id="our-story" aria-labelledby="story-heading">
+      <div class="story-card">
+        <div class="story-decoration" aria-hidden="true"><svg class="icon"><use href="#i-flower"/></svg><span>p.s. I love you</span></div>
+        <p class="eyebrow">A NOTE TO OUR FOREVER</p>
+        <h2 id="story-heading">从两个人，到一个「我们」。</h2>
+        <p class="story-intro">镜头会定格这一刻，而我们还有好多明天。<br>想和你一起，把往后的每一天，都过成值得收藏的小事。</p>
+        <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="false" aria-controls="love-letter"><svg class="icon"><use href="#i-envelope"/></svg><span>打开写给彼此的悄悄话</span><svg class="icon letter-arrow"><use href="#i-down"/></svg></button>
+        <div class="love-letter" id="love-letter" hidden>
+          <div class="letter-paper">
+            <p class="letter-greeting">亲爱的你：</p>
+            <p>想和你分享的不只是这一身婚纱，还有以后的三餐四季、晴天雨天，和生活里每一个小小的瞬间。</p>
+            <p>今天的我们，被镜头珍藏。明天的我们，继续相爱。</p>
+            <p class="letter-signature">很高兴，余生是你。<span>小满 <i>♡</i> 阿澈</span></p>
+          </div>
+        </div>
+        <div class="story-signature">Xiaoman <span>&</span> Che<svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><span>予你余生 <i>·</i> 我们的婚纱相册</span><span class="handwritten">Made of little moments & lots of love.</span><a href="#" aria-label="回到顶部">故事未完，来日方长<svg class="icon"><use href="#i-heart"/></svg></a></footer>
+  <button class="back-to-top" id="back-to-top" aria-label="回到顶部" title="回到顶部" type="button" hidden><svg class="icon"><use href="#i-down"/></svg></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="bgm-audio" preload="none"></audio>
+  <div id="music-home">
+    <aside class="music-player" id="music-player" aria-label="背景音乐" hidden>
+      <div class="music-panel" id="music-panel" hidden>
+        <div class="music-panel-heading"><div><h2>让时光，慢一点</h2><p>四首纯音乐 · 顺序循环</p></div><button class="music-icon-button" id="music-close" type="button" aria-label="收起音乐列表"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+        <div class="music-tracks" id="music-tracks" role="group" aria-label="选择背景音乐"></div>
+        <div class="music-volume-row"><label for="music-volume">音量</label><input id="music-volume" type="range" min="0" max="100" step="1" value="25"><output id="music-volume-value" for="music-volume">25%</output></div>
+        <p class="music-volume-hint" id="music-volume-hint" hidden>请用设备音量键调整音量。</p>
+        <p class="music-feedback" id="music-feedback" role="status"></p>
+        <p class="music-credit">音乐：<a href="https://incompetech.com/" target="_blank" rel="noopener noreferrer">Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a><br><a href="assets/music/credits.html" target="_blank" rel="noopener noreferrer">曲目来源与授权</a></p>
+      </div>
+      <div class="music-bar">
+        <button class="music-play music-icon-button" id="music-play" type="button" aria-label="播放背景音乐" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <button class="music-info" id="music-expand" type="button" aria-expanded="false" aria-controls="music-panel"><span id="music-title">听一段浪漫</span><small id="music-status">轻音乐 · 点击播放</small></button>
+        <button class="music-icon-button music-next" id="music-next" type="button" aria-label="下一首背景音乐" title="下一首"><svg class="icon" aria-hidden="true"><use href="#i-next-track"/></svg></button>
+      </div>
+    </aside>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-shell">
+      <header class="lightbox-top">
+        <div class="lightbox-brand"><svg class="icon"><use href="#i-flower"/></svg><span>此刻，满眼是你<small id="lightbox-count">01 / 60</small></span></div>
+        <div class="lightbox-actions">
+          <button id="lightbox-favorite" class="lightbox-action" type="button" aria-label="收藏这张照片" aria-pressed="false"><svg class="icon"><use href="#i-heart"/></svg><span>收藏</span></button>
+          <button id="lightbox-play" class="lightbox-action" type="button" aria-label="自动播放照片" aria-pressed="false"><svg class="icon"><use href="#i-play"/></svg><span>播放</span></button>
+          <button id="lightbox-close" class="lightbox-close" type="button" aria-label="关闭照片（Esc）" title="关闭（Esc）" autofocus><svg class="icon"><use href="#i-close"/></svg></button>
+        </div>
+      </header>
+      <div class="lightbox-stage">
+        <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button" aria-label="上一张照片" title="上一张（←）"><svg class="icon"><use href="#i-left"/></svg></button>
+        <div class="photo-viewport" id="photo-viewport">
+          <div class="lightbox-loader" id="lightbox-loader" role="status"><span></span><p>心动正在靠近…</p></div>
+          <img id="lightbox-image" alt="" draggable="false">
+          <div class="lightbox-error" id="lightbox-error" hidden><svg class="icon"><use href="#i-flower"/></svg><p>这张照片暂时没能打开</p><button type="button" id="retry-photo">再试一次</button></div>
+        </div>
+        <button class="lightbox-arrow lightbox-next" id="lightbox-next" type="button" aria-label="下一张照片" title="下一张（→）"><svg class="icon"><use href="#i-right"/></svg></button>
+      </div>
+      <div class="lightbox-details">
+        <div class="lightbox-caption"><h2 id="lightbox-title"></h2><p id="lightbox-collection"></p></div>
+        <div class="lightbox-tools">
+          <div class="zoom-controls" aria-label="照片缩放"><button type="button" id="zoom-out" aria-label="缩小照片" title="缩小（－）"><svg class="icon"><use href="#i-minus"/></svg></button><button type="button" id="zoom-reset" aria-label="重置照片缩放" title="恢复原始大小">100%</button><button type="button" id="zoom-in" aria-label="放大照片" title="放大（＋）"><svg class="icon"><use href="#i-plus"/></svg></button></div>
+          <a class="download-photo" id="download-photo" href="#" download title="下载原图"><svg class="icon"><use href="#i-download"/></svg><span>原图</span></a>
+        </div>
+      </div>
+      <div class="slideshow-progress" id="slideshow-progress" aria-hidden="true"><span></span></div>
+      <div class="filmstrip" id="filmstrip" role="group" aria-label="选择照片"></div>
+      <div id="music-viewer-slot"></div>
+      <p class="lightbox-help"><span class="desktop-help">← → 切换照片<span>·</span>双击放大，拖动看细节<span>·</span>Esc 返回相册</span><span class="mobile-help">左右滑动切换<span>·</span>双指缩放，靠近心动</span></p>
+    </div>
+  </dialog>
+  <noscript><div class="noscript-note">请开启浏览器的 JavaScript，以浏览相册和使用照片放大功能。<a href="all_pic/">打开照片文件夹</a></div></noscript>
+</body>
+</html>
